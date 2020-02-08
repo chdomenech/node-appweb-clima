@@ -18,3 +18,5 @@ https://api.openweathermap.org
 
 recuerden ejecutar ```npm install``` para las librerias
 
+Aplicacion corriendo en : https://app-web-clima.herokuapp.com/
+
