@@ -1,0 +1,36 @@
+{{> header }}
+
+    {{> navbar }}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Buscador del clima</h1>
+        <p class="lead">App del clima hecha en nodeJS por {{nombre}}!.</p>
+        <hr class="my-4">
+        <form class="form-inline" method="POST" action="/wheater" id="formulario">
+            <p>Introduzca el nombre de una ciudad.</p>
+        
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="ciudad" class="sr-only">Ciudad</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ejemplo: Madrid">
+            </div>
+            <button type="button" class="btn btn-primary mb-2" id="buscar">Buscar Clima</button>
+
+            <button class="btn btn-primary mb-2" type="button" disabled id="buscando" style="display:none;">
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Buscando...
+            </button>
+
+        </form>
+
+        <div class="alert alert-warning border border-warning" role="alert" style="margin-top: 2rem;display:none;"  id="alerta">
+            El nombre de la ciudad no puede ser vacio.
+        </div>
+
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem; display:none;" role="status"  id="loading"></div>  
+            <span class="sr-only">Loading...</span>
+        </div>
+
+    </div>
+
+{{>footer}}
+

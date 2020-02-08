@@ -1,0 +1,34 @@
+{{> header }}
+    
+    {{> navbar }}
+
+    <div class="jumbotron">
+        <h3 class="display-5">{{nombre}} !</h3><br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Clima</th>
+                    <th scope="col">Tipo clima</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">Temp Min</th>
+                    <th scope="col">Temp Max</th>
+                    <th scope="col">Presión</th>
+                    <th scope="col">Humedad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{tipo_clima}}</td>
+                    <td>{{clima}}</td>
+                    <td>{{temperatura}}</td>
+                    <td>{{temp_min}}</td>                    
+                    <td>{{temp_max}}</td>
+                    <td>{{presion}}</td>
+                    <td>{{humedad}}</td>      
+                </tr>
+            </tbody>
+        </table>    
+         <a class="nav-link" href="/"><< Volver a buscar</a>
+    </div>
+
+{{>footer}}
