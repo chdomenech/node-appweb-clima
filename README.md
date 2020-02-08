@@ -13,3 +13,5 @@ Componentes usados:
 
 recuerden ejecutar ```npm install``` para las librerias
 
+Aplicacion corriendo en : https://app-web-clima.herokuapp.com/info
+
